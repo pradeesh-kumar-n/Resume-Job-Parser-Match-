@@ -1,0 +1,26 @@
+Senior Software Engineer - Dubai
+
+We are seeking an experienced Software Engineer to join our dynamic team in Dubai. The ideal candidate will have strong background in full-stack development with expertise in Python, JavaScript, and cloud technologies.
+
+REQUIREMENTS:
+- Bachelor's degree in Computer Science or related field
+- 3+ years of experience in software development
+- Proficiency in Python and JavaScript/TypeScript
+- Experience with React or similar frontend frameworks
+- Knowledge of AWS cloud services (EC2, S3, RDS, Lambda)
+- Familiarity with Docker containerization and Kubernetes
+- Strong understanding of RESTful APIs and microservices architecture
+- Experience with SQL and NoSQL databases
+- Proficiency in Git version control
+- Excellent problem-solving and communication skills
+- Ability to work in agile/scrum environments
+- Leadership experience preferred
+
+RESPONSIBILITIES:
+- Design, develop, and maintain scalable web applications
+- Collaborate with cross-functional teams to define technical solutions
+- Mentor junior developers and conduct code reviews
+- Optimize application performance and ensure code quality
+- Participate in architectural decisions and technology evaluations
+- Deploy and manage applications on AWS cloud platform
+- Implement CI/CD pipelines for efficient software delivery

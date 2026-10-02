@@ -1,0 +1,30 @@
+John Doe
+Software Engineer
+john.doe@email.com | (555) 123-4567 | Dubai, UAE
+
+PROFESSIONAL SUMMARY
+Results-driven Software Engineer with 5+ years of experience developing scalable web applications using Python, JavaScript, and React. Expertise in cloud platforms (AWS, Docker), database management, and leading cross-functional teams to deliver high-quality software solutions.
+
+TECHNICAL SKILLS
+Languages: Python, Java, JavaScript, SQL, HTML, CSS
+Frameworks: React, Node.js, Django
+Tools: AWS, Docker, Git, Jenkins
+Methodologies: Agile, Scrum, TDD
+
+PROFESSIONAL EXPERIENCE
+Senior Software Engineer | XYZ Tech Solutions, Dubai | Jan 2020 - Present
+- Developed and maintained 10+ web applications using Python/Django and React, serving over 50K monthly active users
+- Led a team of 4 engineers to migrate legacy systems to AWS cloud infrastructure, reducing operational costs by 30%
+- Implemented CI/CD pipelines using Docker and Jenkins, decreasing deployment time by 75%
+- Optimized database queries resulting in 40% improvement in application response time
+- Collaborated with product managers and designers to deliver features 2 weeks ahead of schedule
+
+Software Engineer | ABC Technologies, Dubai | Mar 2018 - Dec 2019
+- Built RESTful APIs using Python and Flask for mobile applications with 100K+ users
+- Created responsive web interfaces using HTML5, CSS3, and JavaScript
+- Conducted code reviews and mentored junior developers
+- Participated in agile sprint planning and daily stand-ups
+
+EDUCATION
+Bachelor of Science in Computer Science
+University of Dubai | Graduated: 2017
