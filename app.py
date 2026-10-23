@@ -14,37 +14,34 @@ st.set_page_config(
 st.title("📄 Resume-Job Matcher")
 st.write("Upload a candidate's resume and a job description to find the best match.")
 
-# --- User Inputs ---
-uploaded_file = st.file_uploader("Upload Resume (PDF)", type=["pdf", "txt"])
+uploaded_file = st.file_uploader("Upload Resume (PDF/TXT)", type=["pdf", "txt"])
 job_description = st.text_area("Paste the Job Description here", height=250)
 
-# --- Analysis Button ---
 if st.button("Analyze Match"):
     if uploaded_file is not None and job_description.strip():
         with st.spinner("Analyzing..."):
             temp_path = None
             try:
-                with tempfile.NamedTemporaryFile(delete=False, suffix=".pdf") as tmp:
-                    tmp.write(uploaded_file.getbuffer())
-                    temp_path = tmp.name
+                if uploaded_file.name.lower().endswith(".txt"):
+                    resume_text = uploaded_file.read().decode("utf-8", errors="ignore")
+                else:
+                    with tempfile.NamedTemporaryFile(delete=False, suffix=".pdf") as tmp:
+                        tmp.write(uploaded_file.getbuffer())
+                        temp_path = tmp.name
 
-                resume_text = extract_text_from_pdf(temp_path)
+                    resume_text = extract_text_from_pdf(temp_path)
 
                 if not resume_text.strip():
                     st.error(
-                        "Could not extract text from the PDF. Please upload a searchable PDF or a scanned PDF with readable text."
+                        "No readable text was found in the uploaded file. "
+                        "Please upload a searchable PDF, a scanned PDF with readable text, or a TXT resume."
                     )
                 else:
-                    # Extract skills
                     resume_skills = extract_skills(resume_text)
-
-                    # Calculate match score
                     score = calculate_match_score(resume_text, job_description)
                     score_percentage = f"{score * 100:.1f}%"
 
-                    # --- Display Results ---
                     st.subheader("📊 Analysis Results")
-
                     col1, col2 = st.columns(2)
                     with col1:
                         st.metric("Match Score", score_percentage)
@@ -56,6 +53,7 @@ if st.button("Analyze Match"):
 
                     with st.expander("View Extracted Resume Text"):
                         st.text(resume_text)
+
             finally:
                 if temp_path and os.path.exists(temp_path):
                     os.remove(temp_path)
