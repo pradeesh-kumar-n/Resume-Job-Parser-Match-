@@ -1,4 +1,6 @@
 pdf2image
 pytesseract
+PyMuPDF
+Pillow
 scikit-learn
 streamlit
